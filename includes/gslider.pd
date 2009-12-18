@@ -1,0 +1,48 @@
+#N canvas 509 178 741 486 10;
+#X obj 146 35 hsl 128 25 1 20000 1 0 density \$0-density_OSC Density(Hz)
+0 -8 0 8 -64 -1 -64 0 1;
+#X obj 145 78 hsl 128 25 0 100 0 0 density_randomness \$0-density_randomness_OSC
+Density_Randomness(%) 0 -8 0 8 -98368 -1 -114752 0 1;
+#X obj 149 257 hsl 128 25 1 99 0 0 grain_length \$0-grain_length_OSC
+Grain_Length(%) 0 -8 0 8 -259073 -1 -259073 0 1;
+#X obj 149 214 hsl 128 25 0 3000 0 0 max_delay \$0-max_delay_OSC Max_Delay(ms)
+0 -8 0 8 -258049 -1 -258049 0 1;
+#X obj 152 339 hsl 128 25 1 10 0 0 envelope_sharpness \$0-envelope_sharpness_OSC
+Envelope_Sharpness 0 -8 0 8 -262081 -1 -262081 0 1;
+#X obj 150 300 hsl 128 25 0 2 0 0 amplitude \$0-amplitude_OSC Amplitude
+0 -8 0 8 -260417 -1 -260417 0 1;
+#X obj 147 124 hsl 128 25 0 500 0 0 pitch \$0-pitch_OSC Pitch(%) 0
+-8 0 8 -184384 -1 -184384 0 1;
+#X obj 148 166 hsl 128 25 0 100 0 0 pitch_randomness \$0-pitch_randomness_OSC
+Pitch_Randomness(%) 0 -8 0 8 -258071 -1 -258071 0 1;
+#X obj 152 384 hsl 128 25 0 1 0 0 stereo_spread \$0-stereo_spread_OSC
+Stereo_Spread 0 -8 0 8 -171969 -1 -171969 0 1;
+#X obj -199 440 outlet;
+#X obj -181 47 prepend /density;
+#X obj -171 109 prepend /density_randomness;
+#X obj -151 317 prepend /grain_length;
+#X obj 15 256 prepend /max_delay;
+#X obj -106 384 prepend /envelope_sharpness;
+#X obj 0 329 prepend /aplitude;
+#X obj -146 159 prepend /pitch;
+#X obj -78 207 prepend /pitch_randomness;
+#X obj -31 427 prepend /stereo_spread;
+#X connect 0 0 10 0;
+#X connect 1 0 11 0;
+#X connect 2 0 12 0;
+#X connect 3 0 13 0;
+#X connect 4 0 14 0;
+#X connect 5 0 15 0;
+#X connect 6 0 16 0;
+#X connect 7 0 17 0;
+#X connect 8 0 18 0;
+#X connect 10 0 9 0;
+#X connect 11 0 9 0;
+#X connect 12 0 9 0;
+#X connect 13 0 9 0;
+#X connect 14 0 9 0;
+#X connect 15 0 9 0;
+#X connect 16 0 9 0;
+#X connect 17 0 9 0;
+#X connect 18 0 9 0;
+#X coords 0 -1 1 1 160 400 1 130 15;

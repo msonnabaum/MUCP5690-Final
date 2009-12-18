@@ -1,0 +1,11 @@
+#N canvas 971 509 272 159 10;
+#X obj -126 24 throw~ main-l;
+#X obj -39 24 throw~ main-r;
+#X obj -126 -10 catch~ \$1-l;
+#X obj -39 -11 catch~ \$1-r;
+#X obj -110 62 outlet~;
+#X obj -55 61 outlet~;
+#X connect 2 0 0 0;
+#X connect 2 0 4 0;
+#X connect 3 0 1 0;
+#X connect 3 0 5 0;
